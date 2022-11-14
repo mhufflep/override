@@ -5,7 +5,7 @@ The goal is to pass all the 10 levels:
 
 | Level | Exploit\Technique\Breach |
 | ----- | ------- |
-| [level00](/level00/walkthrough.md) | |
+| [level00](/level00/walkthrough.md) | Passing suitable argument |
 | [level01](/level01/walkthrough.md) | |
 | [level02](/level02/walkthrough.md) | |
 | [level03](/level03/walkthrough.md) | |
