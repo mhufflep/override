@@ -1,6 +1,6 @@
 # level00
 
-# Header
+## Header
 
 ```bash
 RELRO           STACK CANARY      NX            PIE             RPATH      RUNPATH      FILE
@@ -9,7 +9,7 @@ Partial RELRO   No canary found   NX enabled    No PIE          No RPATH   No RU
 
 <hr>
 
-# Solution
+## Solution
 
 Here is the part of the [disassembled binary](./source.s):
 ```c
