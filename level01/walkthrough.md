@@ -12,9 +12,6 @@ Partial RELRO   No canary found   NX disabled   No PIE          No RPATH   No RU
 ## Solution
 
 From the [disassembled binary](./source.s) we can understand, that there is no shell callers.
-But unlike [level00](./../level00/walkthrough.md), there are `NX disabled` mark in the header.
-
-This means that the binary was linked with `-z execstack` - it allows to execute instructions placed on the stack.
 
 Let's look at the [source](./source.c) code:
 ```c
@@ -109,4 +106,5 @@ PwBLgNa8p8MTKW57S7zxVAQCxnCpV8JqTTs9XEBv
 ## References
 - [Stack overflow preparation](https://snovvcrash.rocks/2019/10/20/classic-stack-overflow.html)
 - [ret2libc](https://wiki.bi0s.in/pwning/return2libc/return-to-libc/)
+- [RELRO and why rewriting GOT through global array here is not possible](https://ctf101.org/binary-exploitation/relocation-read-only/)
 

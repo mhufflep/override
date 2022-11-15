@@ -67,7 +67,7 @@ main:
     ; inlined memset 
     lea    0x1c(%esp),%ebx
     mov    $0x0,%eax
-    mov    $0x10,%edx
+    mov    $0x10,%edx       ; 16 * dword (4 bytes) = 64 bytes
     mov    %ebx,%edi
     mov    %edx,%ecx
     rep stos %eax,%es:(%edi)
