@@ -9,7 +9,7 @@ The goal is to pass all the 10 levels:
 | [level01](/level01/walkthrough.md) | Buffer overflow, ret2libc |
 | [level02](/level02/walkthrough.md) | Format string attack |
 | [level03](/level03/walkthrough.md) | Passing suitable argument |
-| [level04](/level04/walkthrough.md) |  |
+| [level04](/level04/walkthrough.md) | Buffer overflow, ret2libc |
 | [level05](/level05/walkthrough.md) |  |
 | [level06](/level06/walkthrough.md) |  |
 | [level07](/level07/walkthrough.md) |  |
