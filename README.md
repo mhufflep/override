@@ -11,7 +11,7 @@ The goal is to pass all the 10 levels:
 | [level03](/level03/walkthrough.md) | Passing suitable argument |
 | [level04](/level04/walkthrough.md) | Buffer overflow, ret2libc |
 | [level05](/level05/walkthrough.md) | Format string attack, GOT rewriting |
-| [level06](/level06/walkthrough.md) |  |
+| [level06](/level06/walkthrough.md) | Passing suitable argument |
 | [level07](/level07/walkthrough.md) |  |
 | [level08](/level08/walkthrough.md) |  |
 | [level09](/level09/walkthrough.md) |  |
