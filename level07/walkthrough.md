@@ -162,3 +162,4 @@ $ cat .pass
 ```
 
 ## References
+- [bin to dec](https://www.rapidtables.com/convert/number/binary-to-decimal.html)
