@@ -41,7 +41,7 @@ int main(int ac, char **av) {
 
     strcpy(filepath, "./backups/");
     strncat(filepath, av[1], 99 - strlen(filepath));
-    fd = open(filepath, O_CREAT | O_EXCL | O_WRONLY, 0600);
+    fd = open(filepath, O_CREAT | O_EXCL | O_WRONLY, 0660);
     if (fd < 0) {
         printf("ERROR: Failed to open %s%s\n", "./backups", av[1]);
         exit(1);
