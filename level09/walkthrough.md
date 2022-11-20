@@ -137,3 +137,6 @@ j4AunAPDXaJxxWjYEUxpanmvSgRDV3tpA5BEaBuE
 ```
 
 ## References
+- [PIC and PIE](https://stackoverflow.com/questions/28119365/what-are-the-differences-comparing-pie-pic-code-and-executable-on-64-bit-x86-pl)
+- [RIP relative addressing](https://stackoverflow.com/questions/44967075/why-does-this-movss-instruction-use-rip-relative-addressing)
+- [more PIC and PIE](https://leimao.github.io/blog/PIC-PIE/)
