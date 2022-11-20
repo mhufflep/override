@@ -1,7 +1,7 @@
 # override
 
 The final project in the cybersecurity branch.
-The goal is to pass all the 10 levels:
+The goal is to pass 10 levels:
 
 | Level | Exploit\Technique\Breach |
 | ----- | ------- |
@@ -14,7 +14,7 @@ The goal is to pass all the 10 levels:
 | [level06](/level06/walkthrough.md) | Passing suitable argument |
 | [level07](/level07/walkthrough.md) | Passing suitable argument |
 | [level08](/level08/walkthrough.md) | Privilege escalation with symbolic link |
-| [level09](/level09/walkthrough.md) |  |
+| [level09](/level09/walkthrough.md) | Buffer overflow, ret2func |
 
 ## References
 - [stack protection](https://developers.redhat.com/articles/2022/06/02/use-compiler-flags-stack-protection-gcc-and-clang#control_flow_integrity)
