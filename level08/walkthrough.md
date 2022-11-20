@@ -29,6 +29,8 @@ int main(int ac, char **av) {
     ...
 }
 ```
+I decided not to perform it, as `Full RELRO` is in this level meaning that `GOT` cannot be overwritten.
+`NX disabled` meaning that program is 'opened' to shellcode injections, but there's a way more simple solution for this level.
 
 Source file is opened by the filepath given in `argv`, whereas destination (copy) first catenates filepath from `argv` with
 `./backups/` and then opens file. <br> 
