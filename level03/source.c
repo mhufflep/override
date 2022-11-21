@@ -1,14 +1,14 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-void decrypt(int offset) {
+void decrypt(int key) {
     // stack protection here
     char encrypted[17] = "Q}|u`sfg~sf{}|a3";
 
     size_t len = strlen(encrypted);
     size_t i = 0;
     do {
-        encrypted[i] ^= offset;
+        encrypted[i] ^= key;
         i++;
     } while (i < len);
     
@@ -21,10 +21,10 @@ void decrypt(int offset) {
     // stack protection here
 }
 
-void test(int key1, int key2) {
-    int offset = key2 - key1;
+void test(int num1, int num2) {
+    int key = num2 - num1;
 
-    switch (offset) {
+    switch (key) {
         case 0x1:
         case 0x2:
         case 0x3:
@@ -40,7 +40,7 @@ void test(int key1, int key2) {
         case 0x13:
         case 0x14:
         case 0x15: {
-            decrypt(offset);
+            decrypt(key);
             break;
         }
         default: {   
