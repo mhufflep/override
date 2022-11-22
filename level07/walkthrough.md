@@ -31,20 +31,20 @@ int store_number(char *buf) {
 To do that, let's look at the stack:
 | Addr (EBP) | Addr (ESP) | Description | Size |
 | :-----: | :-----: | :-----: | :-----: | 
-| EBP+0x10 | ESP+0x | char **env | 4 bytes |
-| EBP+0xc  | ESP+0x | char **argv | 4 bytes |
-| EBP+0x8  | ESP+0x | int argc | 4 bytes |
-| EBP+0x4  | ESP+0x | return address | 4 bytes |
-| EBP+0x0  | ESP+0x | saved EBP | 4 bytes |
-| EBP-0x4  | ESP+0x | saved EDI | 4 bytes |
-| EBP-0x8  | ESP+0x | saved ESI | 4 bytes |
-| EBP-0xc  | ESP+0x | saved EBX | 4 bytes |
+| EBP+0x10 | ESP+0x1a8 | char **env | 4 bytes |
+| EBP+0xc  | ESP+0x1ac | char **argv | 4 bytes |
+| EBP+0x8  | ESP+0x1b0 | int argc | 4 bytes |
+| EBP+0x4  | ESP+0x1b4 | return address | 4 bytes |
+| EBP+0x0  | ESP+0x1b8 | saved EBP | 4 bytes |
+| EBP-0x4  | ESP+0x1bc | saved EDI | 4 bytes |
+| EBP-0x8  | ESP+0x1c0 | saved ESI | 4 bytes |
+| EBP-0xc  | ESP+0x1c4 | saved EBX | 4 bytes |
 | EBP-0x18 | ESP+0x1d0 | stack alignment | 12 bytes |
 | EBP-0x1c | ESP+0x1cc | stack canary | 4 bytes |
 | EBP-0x30 | ESP+0x1b8 | char cmd[20] | 20 bytes |
 | EBP-0x34 | ESP+0x1b4 | ret number | 4 bytes |
 | ... | ... | ... | ... |
-| EBP-0x1c4 | ESP+0x24 | char buf[100] | 100 bytes |
+| EBP-0x1c4 | ESP+0x24 | unsigned int nums[25] | 100 bytes |
 | EBP-0x1c8 | ESP+0x20 | ... | ... |
 | EBP-0x1cc | ESP+0x1c | argv pointer copy | 4 bytes |
 | EBP-0x1d0 | ESP+0x18 | env pointer copy | 4 bytes |
