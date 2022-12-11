@@ -113,3 +113,4 @@ fjAwpJNs2vvkFLRebEvAQ2hFZ4uQBWfHRsP62d8S
 
 ## References
 - [man open](https://man7.org/linux/man-pages/man2/open.2.html)
+- [There are some info about RELRO](https://systemoverlord.com/2017/03/19/got-and-plt-for-pwning.html) (Do not need here, but this level has Full RELRO, so it is good to know about it)
